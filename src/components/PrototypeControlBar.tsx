@@ -19,9 +19,14 @@ const PrototypeControlBar = () => {
       <div className="px-6 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-6">
-            <span className="text-xs text-wire-gray uppercase tracking-wider">
-              Prototype Controls
-            </span>
+            <div className="flex flex-col">
+              <span className="text-xs text-wire-gray uppercase tracking-wider">
+                Prototype Controls
+              </span>
+              <span className="text-xs font-bold">
+                hf
+              </span>
+            </div>
             <div className="flex gap-1">
               {tabs.map((tab) => (
                 <button
