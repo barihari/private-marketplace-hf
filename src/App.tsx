@@ -9,7 +9,7 @@ function App() {
   const currentTab = usePrototypeStore((state) => state.currentTab)
 
   return (
-    <div className="min-h-screen bg-red-500">
+    <div className="min-h-screen bg-white">
       <PrototypeControlBar />
       <div className="pt-16">
         {currentTab === 'agency-admin' && <AgencyAdminView />}
