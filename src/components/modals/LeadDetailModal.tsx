@@ -1,4 +1,5 @@
 import { usePrototypeStore } from '../../store/usePrototypeStore'
+import { mortgageOptions } from '../../constants/mortgageOptions'
 
 const LeadDetailModal = () => {
   const modal = usePrototypeStore((state) => state.agentDashboard.leadDetailModal)
@@ -114,7 +115,13 @@ const LeadDetailModal = () => {
             {lead.formSnapshot.dtiRatio && (
               <div className="grid grid-cols-2">
                 <span className="text-sm text-wire-gray-dark">DTI Ratio:</span>
-                <span className="text-sm">{lead.formSnapshot.dtiRatio}%</span>
+                <span className="text-sm">
+                  {lead.formSnapshot.dtiRatio === 'lt40'
+                    ? mortgageOptions.dtiOptions.lessThan40
+                    : lead.formSnapshot.dtiRatio === 'gte40'
+                    ? mortgageOptions.dtiOptions.fortyAndAbove
+                    : lead.formSnapshot.dtiRatio}
+                </span>
               </div>
             )}
             {lead.formSnapshot.mortgagePoints && (

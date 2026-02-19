@@ -232,7 +232,7 @@ const GetQuoteModal = () => {
               <h2 className="text-2xl font-bold mb-4">Your request has been sent.</h2>
               <p className="text-wire-gray-dark mb-2">
                 A confirmation email has been sent to{' '}
-                <strong>james.walker@email.com</strong>.
+                <strong>{modal.email}</strong>.
               </p>
               <p className="text-sm text-wire-gray-dark">
                 You will be contacted directly by the selected lenders.

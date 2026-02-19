@@ -594,17 +594,6 @@ export const usePrototypeStore = create<PrototypeStore>((set, get) => ({
   copyAgencyLink: () => {
     const link = 'https://marketplace.bankrate.com/agency/invite/xyz789'
     navigator.clipboard.writeText(link)
-    
-    set({
-      agencyAdminForm: {
-        ...get().agencyAdminForm,
-      },
-    })
-
-    // Reset copied state after 2 seconds
-    setTimeout(() => {
-      // Note: copied state is handled in component
-    }, 2000)
   },
 
   // Agent Signup actions

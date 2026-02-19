@@ -23,7 +23,7 @@ const EntryModal = () => {
       <div className="modal-content max-w-3xl" onClick={(e) => e.stopPropagation()}>
         <div className="text-center mb-4">
           <h2 className="text-2xl font-bold mb-1">
-            Welcome James
+            Welcome {buyerIdentity.firstName}
           </h2>
           <p className="text-sm text-wire-gray-dark">
             Mortgage offers from Bankrate's private marketplace
