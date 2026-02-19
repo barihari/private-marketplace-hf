@@ -20,7 +20,7 @@ export const PrototypeControlBar = () => {
     <div className="sticky top-0 z-40 flex items-center gap-4 border-b border-secondary bg-primary px-6 py-3">
       <div className="flex flex-col mr-2">
         <span className="text-xs text-tertiary uppercase tracking-wider">Prototype</span>
-        <span className="text-xs font-bold text-primary">hf</span>
+        <span className="text-xs font-bold text-primary">High-Fidelity</span>
       </div>
 
       <Tabs

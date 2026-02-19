@@ -24,7 +24,7 @@ const PrototypeControlBar = () => {
                 Prototype Controls
               </span>
               <span className="text-xs font-bold">
-                hf
+                High-Fidelity
               </span>
             </div>
             <div className="flex gap-1">
