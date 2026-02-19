@@ -1,0 +1,25 @@
+---
+description: Switch branches between main (wireframe) and ui-upgrade (Trackify DS). Run the correct commands when asked.
+alwaysApply: false
+---
+
+# Branch Switching
+
+The two branches use different Tailwind versions and need `npm install` each time.
+
+## Commands
+
+**"switch to main"** → run:
+```bash
+git checkout main && npm install && npm run dev
+```
+
+**"switch to upgrade"** (or "switch to ui-upgrade") → run:
+```bash
+git checkout ui-upgrade && npm install && npm run dev
+```
+
+## Why npm install is required
+- `main` uses Tailwind v3 (PostCSS + autoprefixer)
+- `ui-upgrade` uses Tailwind v4 (@tailwindcss/vite)
+- The dep sets are different, so skipping `npm install` will crash the dev server.
