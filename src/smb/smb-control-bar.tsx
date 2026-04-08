@@ -22,12 +22,20 @@ export const SmbControlBar = () => {
         <select
           value="smb"
           onChange={(e) => {
-            if (e.target.value === 'enterprise') window.location.hash = ''
+            const v = e.target.value
+            if (v === "enterprise") window.location.hash = ""
+            if (v === "smb") window.location.hash = "#smb"
+            if (v === "client-landing") window.location.hash = "#client-landing"
+            if (v === "split-landing") window.location.hash = "#split-landing"
+            if (v === "split-landing-gate") window.location.hash = "#split-landing-gate"
           }}
           className="text-xs font-bold text-primary bg-transparent border border-secondary rounded px-1.5 py-0.5 cursor-pointer"
         >
           <option value="enterprise">Enterprise</option>
           <option value="smb">SMB Pivot</option>
+          <option value="client-landing">Client Landing Page</option>
+          <option value="split-landing">Split landing</option>
+          <option value="split-landing-gate">Split landing (gated)</option>
         </select>
       </div>
 

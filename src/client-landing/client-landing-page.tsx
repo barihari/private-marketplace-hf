@@ -83,6 +83,7 @@ export const ClientLandingPage = () => {
                 if (v === "smb") window.location.hash = "#smb"
                 if (v === "client-landing") window.location.hash = "#client-landing"
                 if (v === "split-landing") window.location.hash = "#split-landing"
+                if (v === "split-landing-gate") window.location.hash = "#split-landing-gate"
               }}
               className="cursor-pointer rounded border border-secondary bg-transparent px-1.5 py-0.5 text-xs font-bold text-primary"
             >
@@ -90,6 +91,7 @@ export const ClientLandingPage = () => {
               <option value="smb">SMB Pivot</option>
               <option value="client-landing">Client Landing Page</option>
               <option value="split-landing">Split landing</option>
+              <option value="split-landing-gate">Split landing (gated)</option>
             </select>
           </div>
           <div className="flex items-center border-l border-secondary pl-4">
